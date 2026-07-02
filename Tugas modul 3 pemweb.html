@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Company Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #eef3f8;
+        }
+        header {
+            background: linear-gradient(135deg, #0d6efd, #4f8cff);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-weight: 700;
+            font-size: 45px;
+        }
+        header p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+        section {
+            padding: 60px 0;
+        }
+        h2 {
+            color: #0d6efd;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .table {
+            background: white;
+        }
+        .table thead {
+            background: #0d6efd;
+            color: white;
+        }
+        .table th, .table td {
+            padding: 15px;
+            vertical-align: middle;
+        }
+        .table tbody tr:hover {
+            background: #eaf3ff;
+            transition: .3s;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: .3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,.2);
+        }
+        .btn-custom {
+            background: #0d6efd;
+            color: white;
+            border-radius: 30px;
+            transition: .3s;
+        }
+        .btn-custom:hover {
+            background: #084298;
+            color: white;
+        }
+        footer {
+            background: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">PT DPS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="home">
+    <div class="container">
+        <h1>Selamat Datang di PT DPS</h1>
+        <p>Distributor cat jotun no 1 di bontang</p>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2 class="text-center">Informasi Perusahaan</h2>
+        <div class="table-responsive shadow rounded">
+            <table class="table table-bordered table-hover align-middle mb-0">
+                <thead class="text-center">
+                    <tr>
+                        <th colspan="2">Profil Perusahaan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th width="35%">Nama Perusahaan</th>
+                        <td>PT DPS</td>
+                    </tr>
+                    <tr>
+                        <th>Tahun Berdiri</th>
+                        <td>2015</td>
+                    </tr>
+                    <tr>
+                        <th>Jumlah Karyawan</th>
+                        <td>12 Orang</td>
+                    </tr>
+                    <tr>
+                        <th>Lokasi Kantor</th>
+                        <td>Bontang, Indonesia</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>info@DPS01.com</td>
+                    </tr>
+                    <tr>
+                        <th>Telepon</th>
+                        <td>(021) 12345678</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2 class="text-center">Produk & Layanan</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://cdn-pim.jotun.com/images/ProductImages/200184/1300x1334/200184.png?format=webp&width=2814&quality=70" class="card-img-top" alt="Website">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Produk Unggulan</h5>
+                        <p class="card-text">Produk premium anti luntur .</p>
+                        <a href="#" class="btn btn-custom">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://www.jotun.com/contentassetsjot03/178de5f8f0064cdc9b6dbec4f600379f/004-jotun-12290-antwerp-beige-12075-soothing-beige-8583-earthy-yellow_750x1124.jpg?format=webp&width=1408&height=1760&quality=70" class="card-img-top" alt="Mobile App">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Konsultasi pengecatan</h5>
+                        <p class="card-text">Konsultasikan masalah tembok anda.</p>
+                        <a href="#" class="btn btn-custom">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://www.jotun.com/contentassetsjot03/c3045b9a2959493dafdda92f95118f45/jotun-find-a-dealer-2025-1024x1024.jpg?format=webp&width=2814&height=2814&quality=70" class="card-img-top" alt="IT Consulting">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Katalog warna</h5>
+                        <p class="card-text">Pilih warna favorit untuk rumah anda.</p>
+                        <a href="#" class="btn btn-custom">Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container text-center">
+        <h2>Hubungi Kami</h2>
+        <p><strong>Email:</strong> info@DPS.com</p>
+        <p><strong>Telepon:</strong> (021) 12345678</p>
+        <p><strong>Instagram:</strong> @DPS01</p>
+    </div>
+</section>
+
+<footer>
+    <p class="mb-0">&copy; 2026 PT DPS | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
